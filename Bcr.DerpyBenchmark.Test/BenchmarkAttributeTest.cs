@@ -2,7 +2,7 @@ using Bcr.DerpyBenchmark;
 
 namespace Bcr.DerpyBenchmark.Test;
 
-public class UnitTest1
+public class BenchmarkAttributeTest
 {
     private class TestClass
     {

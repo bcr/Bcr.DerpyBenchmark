@@ -1,5 +1,8 @@
-namespace Bcr.DerpyBenchmark;
+using System;
 
-public class BenchmarkAttribute : Attribute
+namespace Bcr.DerpyBenchmark
 {
+    public class BenchmarkAttribute : Attribute
+    {
+    }
 }

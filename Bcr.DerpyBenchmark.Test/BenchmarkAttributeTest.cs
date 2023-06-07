@@ -1,5 +1,3 @@
-using Bcr.DerpyBenchmark;
-
 namespace Bcr.DerpyBenchmark.Test;
 
 public class BenchmarkAttributeTest

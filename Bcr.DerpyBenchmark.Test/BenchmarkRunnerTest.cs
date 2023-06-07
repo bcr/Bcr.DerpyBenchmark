@@ -5,7 +5,7 @@ public class BenchmarkRunnerTest
     private class TestClass
     {
         [Benchmark]
-        static void FirstMethod() {}
+        public static void FirstMethod() {}
     }
 
     [Fact]

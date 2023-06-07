@@ -6,11 +6,17 @@ public class BenchmarkRunnerTest
     {
         [Benchmark]
         public static void FirstMethod() {}
+        [Benchmark]
+        public static void SecondMethod() {}
+        public static void ThirdMethod() {}
     }
 
     [Fact]
     public void Runs()
     {
-        BenchmarkRunner.Run<TestClass>();
+        var actual = BenchmarkRunner.Run<TestClass>();
+        Assert.Equal(2, actual.Count);
+        Assert.Equal("FirstMethod", actual[0].Name);
+        Assert.Equal("SecondMethod", actual[1].Name);
     }
 }

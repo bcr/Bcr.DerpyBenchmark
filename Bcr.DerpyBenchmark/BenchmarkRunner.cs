@@ -6,7 +6,7 @@ namespace Bcr.DerpyBenchmark
 {
     public class BenchmarkRunner
     {
-        public static List<BenchmarkResult> Run<T>()
+        public static List<BenchmarkResult> Run<T>(int iterations)
         {
             var returnValue = new List<BenchmarkResult>();
 
@@ -16,8 +16,6 @@ namespace Bcr.DerpyBenchmark
 
             foreach (var testMethod in testMethods)
             {
-                int iterations = 100;
-
                 var stopwatch = Stopwatch.StartNew();
                 for (int iteration = 0;iteration < iterations;++iteration)
                 {

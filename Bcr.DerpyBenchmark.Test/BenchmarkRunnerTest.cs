@@ -14,7 +14,7 @@ public class BenchmarkRunnerTest
     [Fact]
     public void Runs()
     {
-        var actual = BenchmarkRunner.Run<TestClass>();
+        var actual = BenchmarkRunner.Run<TestClass>(100);
         Assert.Equal(2, actual.Count);
         Assert.Equal("FirstMethod", actual[0].Name);
         Assert.Equal("SecondMethod", actual[1].Name);
